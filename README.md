@@ -1,5 +1,7 @@
 # Swarm Intelligence: Simulating Boids
 
+Assignment from the course Natural Computing 2023 at the Radboud University.
+
 ## Introduction to the assignment
 
 A boid is a fictional entity created by Reynolds to simulate flocking behaviour in computers (Reynolds, 1987). Reynolds modelled it by using three forces: cohesion, alignment, and separation. Cohesion makes the boids stick together, alignment aligns each individual boids direction to the average direction of the group, and separation pushes the boids apart (such that they do not collide).
