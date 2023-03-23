@@ -1,2 +1,2 @@
-# naco-si
-Swarm Intelligence: Simulating Boids
+# Swarm Intelligence: Simulating Boids
+
