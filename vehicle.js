@@ -9,6 +9,7 @@
 class Vehicle {
   // Constructor initialize all values
   constructor(x, y, ms, mf) {
+    this.prev_position = createVector(x, y);
     this.position = createVector(x, y);
     this.r = 12;
     this.maxspeed = ms;
@@ -19,7 +20,11 @@ class Vehicle {
 
   getPos() {
     return this.position
+  }
+  getPrevPos() {
+    return this.prev_position
   }  
+  
   
   // A function to deal with path following and separation
   applyBehaviors(vehicles, path) {
@@ -37,9 +42,10 @@ class Vehicle {
     s.mult(1);
     a.mult(1)
     this.applyForce(f);
-    this.applyForce(s);
-    this.applyForce(c);
-    this.applyForce(a);
+    
+    //this.applyForce(s);
+    //this.applyForce(c);
+    //this.applyForce(a);
   }
 
   applyForce(force) {
@@ -237,12 +243,14 @@ class Vehicle {
   // Method to update position
   update() {
     // Update velocity
-    this.velocity.add(this.acceleration);
+    this.velocity.add(this.acceleration)
     // Limit speed
-    this.velocity.limit(this.maxspeed);
-    this.position.add(this.velocity);
+    this.velocity.limit(this.maxspeed)
+    this.prev_position.x = this.position.x
+    this.prev_position.y = this.position.y
+    this.position.add(this.velocity)
     // Reset accelertion to 0 each cycle
-    this.acceleration.mult(0);
+    this.acceleration.mult(0)
   }
 
   // A method that calculates and applies a steering force towards a target
