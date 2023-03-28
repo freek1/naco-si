@@ -6,9 +6,10 @@ Assignment from the course Natural Computing 2023 at the Radboud University.
 
 A boid is a fictional entity created by Reynolds to simulate flocking behaviour in computers (Reynolds, 1987). Reynolds modelled it by using three forces: cohesion, alignment, and separation. Cohesion makes the boids stick together, alignment aligns each individual boids direction to the average direction of the group, and separation pushes the boids apart (such that they do not collide).
 
-Seyfried et al. (2005) have revisited the fundamental diagram (FD), which is a diagram that describes the relation between the velocity and density of individual humans.
-
-Baglietto et al. (2011) have researched the relation between the density of humans on a racetrack and the velocity of the humans. They did this on a circular racetrack. They found a negative relation between the speed (in m/s) and the density (in humans/m$^2$), which can be nicely shown in an FD.
+Baglietto et al. (2011) have researched the relationship between the density of humans on a
+racetrack and the velocity of the humans. They did this on a circular racetrack. They found
+a negative relation between the speed (in m/s) and the density (in humans/m2), which can be
+nicely shown in a fundamental diagram (FD) (Seyfried et al., 2005).
 
 In this assignment we will research whether boids behave as humans do on a similar circular racetrack. We will do so by conducting an ablation study on simulated boids on a similar racetrack to Baglietto et al. (2011) and comparing the FDs.
 
