@@ -18,6 +18,9 @@ The full report is uploaded as a pdf in this repository.
 ## To run:
 Open `index.html` and the simulation runs. To edit variables, see `sketch.js` for simulation parameters (e.g. nr. of boids) and `vehicle.js` for forces (i.e. cohesion, alignment, separation and track following).
 
+## To analyse:
+See the folder `code`.
+
 ## References
 
 C. W. Reynolds. Flocks, herds and schools: A distributed behavioral model. In Proceedings of the 14th Annual
